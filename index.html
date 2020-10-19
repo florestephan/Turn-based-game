@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projet 6 - Jeu de plateau</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+<header>
+    <img src="img/Donkey_Kong_logo.png" alt="logo" class="logo"/>
+</header>
+
+<div class="Game">
+    <!--Infos players 1-->
+    <div class="colDonkey">
+        <h4>Donkey</h4>
+        <div id="donkey"></div>
+        <h4>Arme</h4>
+        <img class="donkey_weapon">
+        <h4>Force</h4>
+        <h3 class="donkey_weapon_force"></h3>
+        <h1>Score</h1>
+
+        <div>
+            <h1 class="donkey_score"></h1>
+        </div>
+
+        <div id="actionplayer">
+            <button type="button" class="attack">Attaquer</button>
+            <button type="button" class="defense">Se défendre</button>
+            <button type="button" class="validMove">Valider le déplacement</button>
+        </div>
+    </div>
+
+    <!--Plateau de jeu-->
+    <div>
+        <table id="gameboard"></table>
+    </div>
+
+    <div class="colkong">
+        <h4>Kong</h4>
+        <div id="kong"></div>
+        <h4>Arme</h4>
+        <img class="kong_weapon">
+        <h4>Force</h4>
+        <h3 class="kong_weapon_force"></h3>
+        <h1>Score</h1>
+
+        <div>
+            <h1 class="kong_score"></h1>
+        </div>
+        <div id="actionplayer">
+            <button type="button" class="attack">Attaquer</button>
+            <button type="button" class="defense">Se défendre</button>
+            <button type="button" class="validMove">Valider le déplacement</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <h2 id="turnplayer"></h2>
+    <button type="button" class="reload">Relancer le jeu</button>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/Board.js"></script>
+<script src="scripts/Weapons.js"></script>
+<script src="scripts/Players.js"></script>
+<script src="scripts/Game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+body {
+    background: url('../img/body_background.jpg') no-repeat;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 31%;
+}
+
+.Game {
+    display: flex;
+    align-items: flex-start;
+}
+
+table {
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+    background: url(../img/sand.jpg);
+    background-size: 111px;
+    box-shadow: 12px 33px 88px 68px #041F01;
+}
+#feuillage{
+    border: 1px dashed #4c4949;
+    border-image: url('../img/palmtreold.png');
+    border-image-width: 50;
+    border-image-outset: 26;
+    width: 75px;
+}
+
+tr {
+    height: 75px;
+}
+
+.wall {
+    background-image: url('../img/walls_old.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    width: 10px;
+}
+
+/*Tableau personnage donkey*/
+#donkey {
+    background: url("../img/bigMonkey.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70px;
+}
+
+.colDonkey {
+    margin: auto;
+    background-color: #86292ed9;
+    padding: 2%;
+    width: fit-content;
+}
+
+/*Tableau personnage Kong*/
+#kong {
+    background: url(../img/smallMonkey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+}
+
+.colkong {
+    margin: auto;
+    background-color: #86292ed9;
+    padding: 2%;
+    width: fit-content;
+}
+
+.donkey_weapon, .kong_weapon {
+    height: 50px;
+}
+
+/*bord_personnage*/
+.donkey {
+    background-image: url("../img/bigMonkey.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.kong {
+    background-image: url("../img/smallMonkey.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+#actionplayer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#turnplayer {
+    text-align: center;
+    color: wheat;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.reload {
+    padding: 1%;
+    width: fit-content;
+    margin: auto;
+}
+
+/*Weapons*/
+
+.banana {
+    background-image: url("../img/banana.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.knife {
+    background-image: url("../img/knife.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.pistol {
+    background-image: url("../img/pistol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.sniper {
+    background-image: url("../img/sniper.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*cells en surbriance*/
+
+td.active {
+    background-color: forestgreen;
+    opacity: 0.5;
+    border-radius: 73%;
+}
